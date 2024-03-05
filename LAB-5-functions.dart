@@ -4,5 +4,5 @@ void main() {
   for (int i = 0; i < numbers.length; i++) {
     curr = curr + numbers[i];
   }
-  print(curr);
+  print(curr / numbers.length);
 }

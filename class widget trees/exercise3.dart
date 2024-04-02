@@ -13,10 +13,9 @@ class MainApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: const Text("BMI Calculator"),
-          backgroundColor: Color.fromARGB(255, 107, 56, 116),
+          backgroundColor: Color.fromARGB(255, 202, 140, 212),
         ),
-        backgroundColor: const Color.fromARGB(
-            255, 95, 74, 99), // Set the background color of the Scaffold
+        backgroundColor: const Color.fromARGB(255, 95, 74, 99),
         body: const Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -26,8 +25,12 @@ class MainApp extends StatelessWidget {
                   child: SizedBox(
                     width: 175,
                     height: 150,
-                    child: Center(
-                      child: Text('Male'),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Icons.male, size: 60),
+                        Text('Male'),
+                      ],
                     ),
                   ),
                 ),
@@ -36,17 +39,24 @@ class MainApp extends StatelessWidget {
                   child: SizedBox(
                     width: 175,
                     height: 150,
-                    child: Center(
-                      child: Text('Female'),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Icons.female, size: 60),
+                        Text('Female'),
+                      ],
                     ),
                   ),
                 ),
               ],
             ),
             Expanded(
-              child: SizedBox(
-                child: Center(
-                  child: Text('Female'),
+              child: Card(
+                color: Colors.white,
+                child: SizedBox(
+                  child: Center(
+                    child: Text('Third Box'),
+                  ),
                 ),
               ),
             ),

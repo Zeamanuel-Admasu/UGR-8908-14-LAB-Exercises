@@ -21,8 +21,7 @@ class MainApp extends StatelessWidget {
                     Navigator.pop(context);
                   },
                 ),
-                const Text(
-                    "                                                                "),
+                const Text(""),
                 IconButton(
                   icon: const Icon(Icons.settings),
                   onPressed: () {},
